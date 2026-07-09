@@ -3,267 +3,443 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dark Shopping</title>
+
+<title>Dark Pattern Shop</title>
+
 <link rel="stylesheet" href="dark.css">
 </head>
 
 <body>
 
+<!-- 헤더 -->
+
 <header class="header">
 
-<div class="logo">
-🛒 Dark Shopping
-</div>
+    <div class="logo">
+        DarkShop
+    </div>
 
-<div class="searchBox">
+    <div class="search-box">
 
-<input
-type="text"
-placeholder="상품을 검색하세요">
+        <input
+            type="text"
+            placeholder="상품을 검색해보세요">
 
-<button>
-검색
-</button>
+        <button>검색</button>
 
-</div>
+    </div>
 
-<div class="userMenu">
+    <nav>
 
-<span>🔔</span>
+        <button onclick="location.href='dark-account.html'">
+            🛒 장바구니
+        </button>
 
-<span>❤️</span>
+        <button onclick="location.href='dark-account.html'">
+            👤 마이페이지
+        </button>
 
-<span>🛒</span>
-
-<div class="profile">
-
-<div class="avatar">
-Y
-</div>
-
-<div>
-
-<b>김예린님</b>
-
-<p>프리미엄 회원</p>
-
-</div>
-
-</div>
-
-</div>
+    </nav>
 
 </header>
 
-<nav>
+<!-- 카테고리 -->
 
-<a href="#">홈</a>
+<section class="category">
 
-<a href="#">베스트</a>
+<button>전체</button>
+<button>전자제품</button>
+<button>생활용품</button>
+<button>패션</button>
+<button>식품</button>
+<button>가전</button>
+<button>뷰티</button>
 
-<a href="#">패션</a>
+</section>
 
-<a href="#">전자제품</a>
+<!-- 메인 배너 -->
 
-<a href="#">식품</a>
+<section class="banner">
 
-<a href="#">뷰티</a>
+    <div class="banner-text">
 
-<a href="#">고객센터</a>
+        <h1>
+            오늘만 최대 70% 할인
+        </h1>
 
-<a href="dark-mypage.html">마이페이지</a>
+        <p>
 
-</nav>
+            AI가 고객님만을 위해 추천한
+            특별 할인 상품입니다.
 
-<section class="hero">
+        </p>
 
-<div class="heroText">
+        <button>
+            지금 구매하기
+        </button>
 
-<h1>
+    </div>
 
-SUMMER SALE
+</section>
 
-</h1>
+<!-- AI 추천 -->
 
-<p>
+<section class="recommend">
 
-오늘 가입하면 최대 90% 할인
+<h2>
+🤖 AI 맞춤 추천
+</h2>
+
+<p class="recommend-message">
+
+회원님의 최근 검색 기록을 분석하여
+구매 가능성이 높은 상품을 추천했습니다.
+
+</p>
+
+<div class="product-grid">
+
+<!-- 상품1 -->
+
+<div class="product">
+
+<div class="badge">
+AI 추천
+</div>
+
+<img
+src="https://picsum.photos/300/220?1">
+
+<h3>
+
+무선 이어폰
+
+</h3>
+
+<p class="price">
+
+59,900원
 
 </p>
 
 <button>
 
-쿠폰 받기
+바로 구매
 
 </button>
 
 </div>
 
-</section>
+<!-- 상품2 -->
 
-<section class="mission">
+<div class="product">
 
-<h2>
+<div class="badge">
+인기
+</div>
 
-🎯 MISSION
+<img
+src="https://picsum.photos/300/220?2">
 
-</h2>
+<h3>
 
-<p>
+스마트 워치
 
-회원 탈퇴를 완료하세요.
+</h3>
+
+<p class="price">
+
+129,000원
 
 </p>
 
-<div id="timer">
+<button>
 
-00:00
+바로 구매
 
-</div>
-
-<div id="clickCount">
-
-클릭수 : 0
+</button>
 
 </div>
 
-</section>
+<!-- 상품3 -->
 
-<section class="recommend">
+<div class="product">
 
-<h2>
+<div class="badge">
+추천
+</div>
 
-AI 추천 상품
+<img
+src="https://picsum.photos/300/220?3">
 
-</h2>
+<h3>
 
-<div class="products">
+노트북 거치대
 
-<div class="card">
+</h3>
 
-<img src="https://picsum.photos/300/220?1">
+<p class="price">
 
-<h3>게이밍 노트북</h3>
+39,900원
 
-<p>★★★★★ (312)</p>
+</p>
 
-<h4>1,590,000원</h4>
+<button>
 
-<button>장바구니</button>
+바로 구매
+
+</button>
 
 </div>
 
-<div class="card">
+<!-- 상품4 -->
 
-<img src="https://picsum.photos/300/220?2">
+<div class="product">
 
-<h3>무선 이어폰</h3>
-
-<p>★★★★★ (511)</p>
-
-<h4>89,000원</h4>
-
-<button>장바구니</button>
-
+<div class="badge">
+BEST
 </div>
 
-<div class="card">
+<img
+src="https://picsum.photos/300/220?4">
 
-<img src="https://picsum.photos/300/220?3">
+<h3>
 
-<h3>기계식 키보드</h3>
+블루투스 스피커
 
-<p>★★★★☆ (182)</p>
+</h3>
 
-<h4>129,000원</h4>
+<p class="price">
 
-<button>장바구니</button>
+79,000원
 
-</div>
+</p>
 
-<div class="card">
+<button>
 
-<img src="https://picsum.photos/300/220?4">
+바로 구매
 
-<h3>게이밍 마우스</h3>
-
-<p>★★★★★ (246)</p>
-
-<h4>49,900원</h4>
-
-<button>장바구니</button>
+</button>
 
 </div>
 
 </div>
 
 </section>
+<!-- 인기 상품 -->
 
-<section class="recommend">
+<section class="popular">
+
+    <h2>🔥 인기 상품 TOP 8</h2>
+
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="https://picsum.photos/300/220?5">
+            <h3>게이밍 키보드</h3>
+            <p class="price">89,000원</p>
+            <button>구매하기</button>
+        </div>
+
+        <div class="product">
+            <img src="https://picsum.photos/300/220?6">
+            <h3>무선 마우스</h3>
+            <p class="price">39,000원</p>
+            <button>구매하기</button>
+        </div>
+
+        <div class="product">
+            <img src="https://picsum.photos/300/220?7">
+            <h3>모니터</h3>
+            <p class="price">269,000원</p>
+            <button>구매하기</button>
+        </div>
+
+        <div class="product">
+            <img src="https://picsum.photos/300/220?8">
+            <h3>태블릿</h3>
+            <p class="price">399,000원</p>
+            <button>구매하기</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 다크패턴 이벤트 -->
+
+<section class="event-box">
+
+    <h2>⚠ 오늘만 진행되는 이벤트</h2>
+
+    <p class="event-text">
+
+        현재 고객님의 전용 할인 쿠폰이 발급되었습니다.<br>
+        지금 구매하지 않으면 자동으로 소멸될 수 있습니다.
+
+    </p>
+
+    <div class="countdown">
+
+        남은 시간
+
+        <span id="timer">
+            09:59
+        </span>
+
+    </div>
+
+    <button class="event-btn">
+
+        할인 혜택 받기
+
+    </button>
+
+</section>
+
+<!-- 최근 본 상품 -->
+
+<section class="recent">
 
 <h2>
 
-실시간 인기상품
+최근 본 상품
 
 </h2>
 
-<div class="products">
+<div class="product-grid">
 
-<div class="card">
+<div class="product">
 
-<img src="https://picsum.photos/300/220?5">
+<img src="https://picsum.photos/300/220?9">
 
-<h3>스마트워치</h3>
+<h3>
 
-<p>★★★★☆ (421)</p>
+게이밍 의자
 
-<h4>259,000원</h4>
+</h3>
 
-<button>장바구니</button>
+<p class="price">
 
-</div>
+189,000원
 
-<div class="card">
+</p>
 
-<img src="https://picsum.photos/300/220?6">
+<button>
 
-<h3>27인치 모니터</h3>
+다시 보기
 
-<p>★★★★★ (522)</p>
-
-<h4>289,000원</h4>
-
-<button>장바구니</button>
+</button>
 
 </div>
 
-<div class="card">
+<div class="product">
 
-<img src="https://picsum.photos/300/220?7">
+<img src="https://picsum.photos/300/220?10">
 
-<h3>블루투스 스피커</h3>
+<h3>
 
-<p>★★★★★ (175)</p>
+LED 스탠드
 
-<h4>79,000원</h4>
+</h3>
 
-<button>장바구니</button>
+<p class="price">
+
+45,900원
+
+</p>
+
+<button>
+
+다시 보기
+
+</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://picsum.photos/300/220?11">
+
+<h3>
+
+휴대용 선풍기
+
+</h3>
+
+<p class="price">
+
+24,900원
+
+</p>
+
+<button>
+
+다시 보기
+
+</button>
 
 </div>
 
-<div class="card">
+<div class="product">
 
-<img src="https://picsum.photos/300/220?8">
+<img src="https://picsum.photos/300/220?12">
 
-<h3>컴퓨터 의자</h3>
+<h3>
 
-<p>★★★★☆ (296)</p>
+USB 허브
 
-<h4>199,000원</h4>
+</h3>
 
-<button>장바구니</button>
+<p class="price">
+
+19,900원
+
+</p>
+
+<button>
+
+다시 보기
+
+</button>
 
 </div>
+
+</div>
+
+</section>
+
+<!-- 리뷰 -->
+
+<section class="review">
+
+<h2>
+
+구매 후기
+
+</h2>
+
+<div class="review-box">
+
+★★★★★
+
+"배송도 빠르고 품질도 좋아요!"
+
+</div>
+
+<div class="review-box">
+
+★★★★★
+
+"AI 추천이라 믿고 샀는데 만족합니다."
+
+</div>
+
+<div class="review-box">
+
+★★★★★
+
+"오늘만 할인이라 바로 구매했습니다."
 
 </div>
 
@@ -271,11 +447,20 @@ AI 추천 상품
 
 <footer>
 
-© 2026 Dark Shopping
+<div>
+
+Dark Pattern Shopping Mall
+
+</div>
+
+<p>
+
+Copyright © 2026
+
+</p>
 
 </footer>
 
-<script src="tracker.js"></script>
 <script src="dark.js"></script>
 
 </body>
