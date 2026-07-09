@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Good Shopping</title>
+<title>GoodShop</title>
 
 <link rel="stylesheet" href="good.css">
 
@@ -16,99 +16,62 @@
 
 <header class="header">
 
-<div class="logo">
+    <div class="logo">
+        GoodShop
+    </div>
 
-🛒 Good Shopping
+    <div class="search-box">
 
-</div>
+        <input
+        type="text"
+        placeholder="찾고 싶은 상품을 검색해 보세요">
 
-<div class="searchBox">
+        <button>
+            검색
+        </button>
 
-<input
-type="text"
-placeholder="상품을 검색하세요">
+    </div>
 
-<button>
+    <nav>
 
-검색
+        <button onclick="location.href='good-mypage.html'">
+            👤 마이페이지
+        </button>
 
-</button>
-
-</div>
-
-<div class="userMenu">
-
-<span>🔔</span>
-
-<span>❤️</span>
-
-<span>🛒</span>
-
-<div class="profile">
-
-<div class="avatar">
-
-Y
-
-</div>
-
-<div>
-
-<b>김예린님</b>
-
-<p>프리미엄 회원</p>
-
-</div>
-
-</div>
-
-</div>
+    </nav>
 
 </header>
 
-<nav>
+<section class="category">
 
-<a href="good-home.html">홈</a>
+<button>전체</button>
+<button>전자제품</button>
+<button>생활</button>
+<button>패션</button>
+<button>뷰티</button>
+<button>식품</button>
 
-<a href="#">베스트</a>
+</section>
 
-<a href="#">전자제품</a>
+<section class="banner">
 
-<a href="#">패션</a>
-
-<a href="#">식품</a>
-
-<a href="#">뷰티</a>
-
-<a href="#">고객센터</a>
-
-<a href="good-mypage.html">
-
-마이페이지
-
-</a>
-
-</nav>
-
-<section class="hero">
-
-<div class="heroText">
+<div class="banner-text">
 
 <h1>
 
-GOOD SHOPPING
+고객님을 위한 추천 상품
 
 </h1>
 
 <p>
 
-쉽고 편리한 쇼핑 경험
+최근 관심 상품을 바탕으로 추천드립니다.
 
 </p>
 
 <button>
 
-추천상품 보기
+추천 상품 보기
 
 </button>
 
@@ -116,35 +79,7 @@ GOOD SHOPPING
 
 </section>
 
-<section class="mission">
-
-<h2>
-
-🎯 MISSION
-
-</h2>
-
-<p>
-
-회원 탈퇴를 완료하세요.
-
-</p>
-
-<div id="timer">
-
-00:00
-
-</div>
-
-<div id="clickCount">
-
-클릭수 : 0
-
-</div>
-
-</section>
-
-<section class="recommend">
+<section>
 
 <h2>
 
@@ -152,76 +87,135 @@ GOOD SHOPPING
 
 </h2>
 
-<div class="products">
+<p class="recommend-message">
 
-<div class="card">
+추천 이유를 함께 제공하여
+사용자가 스스로 선택할 수 있도록 합니다.
 
-<img src="https://picsum.photos/300/220?11">
+</p>
 
-<h3>노트북</h3>
+<div class="product-grid">
 
-<p>★★★★★ (315)</p>
+<div class="product">
 
-<h4>1,390,000원</h4>
+<img src="https://picsum.photos/300/220?41">
 
-<button>장바구니</button>
+<h3>
 
-</div>
+무선 이어폰
 
-<div class="card">
+</h3>
 
-<img src="https://picsum.photos/300/220?12">
+<p class="reason">
 
-<h3>무선 이어폰</h3>
+최근 음향기기를 많이 찾아보셨습니다.
 
-<p>★★★★★ (520)</p>
+</p>
 
-<h4>89,000원</h4>
+<p class="price">
 
-<button>장바구니</button>
+59,900원
 
-</div>
+</p>
 
-<div class="card">
+<button>
 
-<img src="https://picsum.photos/300/220?13">
+상품 보기
 
-<h3>게이밍 마우스</h3>
-
-<p>★★★★★ (421)</p>
-
-<h4>39,900원</h4>
-
-<button class="addCart">장바구니</button>
+</button>
 
 </div>
 
-<div class="card">
+<div class="product">
 
-<img src="https://picsum.photos/300/220?14">
+<img src="https://picsum.photos/300/220?42">
 
-<h3>기계식 키보드</h3>
+<h3>
 
-<p>★★★★☆ (173)</p>
+스마트 워치
 
-<h4>129,000원</h4>
+</h3>
 
-<button>장바구니</button>
+<p class="reason">
+
+운동용 제품과 함께 많이 구매됩니다.
+
+</p>
+
+<p class="price">
+
+129,000원
+
+</p>
+
+<button>
+
+상품 보기
+
+</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://picsum.photos/300/220?43">
+
+<h3>
+
+블루투스 스피커
+
+</h3>
+
+<p class="reason">
+
+최근 인기 상품입니다.
+
+</p>
+
+<p class="price">
+
+79,000원
+
+</p>
+
+<button>
+
+상품 보기
+
+</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://picsum.photos/300/220?44">
+
+<h3>
+
+노트북 거치대
+
+</h3>
+
+<p class="reason">
+
+컴퓨터 액세서리 추천 상품입니다.
+
+</p>
+
+<p class="price">
+
+39,900원
+
+</p>
+
+<button>
+
+상품 보기
+
+</button>
 
 </div>
 
 </div>
 
 </section>
-
-<footer>
-
-© 2026 Good Shopping
-
-</footer>
-
-<script src="good.js"></script>
-
-</body>
-
-</html>
