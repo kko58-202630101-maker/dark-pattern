@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>실험 결과</title>
+
+<link rel="stylesheet" href="dark.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+
+🧪 Dark Pattern Lab
+
+</div>
+
+</header>
+
+<section class="recommend">
+
+<div class="card" style="max-width:900px;margin:auto;padding:50px;">
+
+<h1 style="text-align:center;">
+
+📊 실험 결과
+
+</h1>
+
+<br>
+
+<table style="width:100%;border-collapse:collapse;font-size:20px;">
+
+<tr>
+
+<th style="padding:15px;background:#2563eb;color:white;">
+항목
+</th>
+
+<th style="padding:15px;background:#2563eb;color:white;">
+결과
+</th>
+
+</tr>
+
+<tr>
+
+<td style="padding:15px;border:1px solid #ddd;">
+⏱ 총 소요시간
+</td>
+
+<td id="timeResult" style="padding:15px;border:1px solid #ddd;">
+-
+</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:15px;border:1px solid #ddd;">
+🖱 클릭수
+</td>
+
+<td id="clickResult" style="padding:15px;border:1px solid #ddd;">
+-
+</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:15px;border:1px solid #ddd;">
+📄 마지막 방문 메뉴
+</td>
+
+<td id="menuResult" style="padding:15px;border:1px solid #ddd;">
+-
+</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:15px;border:1px solid #ddd;">
+회원 탈퇴 찾기
+</td>
+
+<td id="q1Result" style="padding:15px;border:1px solid #ddd;">
+-
+</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:15px;border:1px solid #ddd;">
+스트레스
+</td>
+
+<td id="q2Result" style="padding:15px;border:1px solid #ddd;">
+-
+</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:15px;border:1px solid #ddd;">
+다시 이용 의향
+</td>
+
+<td id="q3Result" style="padding:15px;border:1px solid #ddd;">
+-
+</td>
+
+</tr>
+
+</table>
+
+<br><br>
+
+<h2>
+
+💬 의견
+
+</h2>
+
+<div
+
+id="comment"
+
+style="background:#f5f5f5;padding:20px;border-radius:10px;font-size:18px;line-height:1.8;">
+
+</div>
+
+<br><br>
+
+<div style="background:#eaf4ff;padding:25px;border-radius:10px;">
+
+<h2>
+
+📈 실험 분석
+
+</h2>
+
+<br>
+
+<p>
+
+다크패턴은 사용자가 원하는 기능을 수행하는 데 더 많은 시간과 클릭을 유도하도록 설계될 수 있습니다.
+
+</p>
+
+<br>
+
+<p>
+
+본 실험에서는 소요시간, 클릭 횟수, 설문 결과를 통해 UI 설계가 사용자 경험에 미치는 영향을 비교할 수 있습니다.
+
+</p>
+
+</div>
+
+<br><br>
+
+<button
+
+onclick="location.href='index.html'"
+
+style="width:100%;
+height:60px;
+background:#2563eb;
+color:white;
+font-size:22px;
+border:none;
+border-radius:10px;
+cursor:pointer;">
+
+처음으로 돌아가기
+
+</button>
+
+</div>
+
+</section>
+
+<script>
+
+let sec=parseInt(localStorage.getItem("playTime"))||0;
+let click=parseInt(localStorage.getItem("clickCount"))||0;
+let menu=localStorage.getItem("lastMenu")||"-";
+
+let m=Math.floor(sec/60);
+let s=sec%60;
+
+document.getElementById("timeResult").innerHTML=
+String(m).padStart(2,"0")+":"+
+String(s).padStart(2,"0");
+
+document.getElementById("clickResult").innerHTML=
+click+"회";
+
+document.getElementById("menuResult").innerHTML=
+menu;
+
+document.getElementById("q1Result").innerHTML=
+localStorage.getItem("q1");
+
+document.getElementById("q2Result").innerHTML=
+localStorage.getItem("q2");
+
+document.getElementById("q3Result").innerHTML=
+localStorage.getItem("q3");
+
+document.getElementById("comment").innerHTML=
+localStorage.getItem("q4");
+
+</script>
+
+</body>
+
+</html>
