@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>탈퇴 완료</title>
+<title>회원 탈퇴 완료</title>
 
 <link rel="stylesheet" href="dark.css">
 
@@ -16,94 +15,61 @@
 
 <header class="header">
 
-<div class="logo">
-
-🛒 Dark Shopping
-
-</div>
+    <div class="logo">
+        DarkShop
+    </div>
 
 </header>
 
-<section class="recommend">
+<section class="withdraw-page">
 
-<div class="card" style="max-width:700px;margin:auto;padding:50px;text-align:center;">
+<div style="text-align:center;">
 
-<h1 style="color:#e63946;font-size:46px;">
+<h1 style="color:#d50000;">
 
-회원 탈퇴 완료
+회원 탈퇴가 완료되었습니다.
 
 </h1>
 
-<br>
+<p class="withdraw-text">
 
-<p style="font-size:22px;">
+DarkShop 서비스를 이용해 주셔서 감사합니다.<br><br>
 
-회원 탈퇴가 정상적으로 처리되었습니다.
-
-</p>
-
-<br><br>
-
-<div style="background:#f5f5f5;padding:25px;border-radius:12px;line-height:2;">
-
-<h3>실험 결과</h3>
-
-<br>
-
-<p>
-
-⏱ 총 소요시간
-
-<strong id="timeResult">
-
-00:00
-
-</strong>
+회원님의 개인정보는 관련 법령에 따라 처리됩니다.
 
 </p>
 
-<p>
+<div class="benefit-box">
 
-🖱 총 클릭수
+<h2>
 
-<strong id="clickResult">
+탈퇴 처리 결과
 
-0회
+</h2>
 
-</strong>
+<ul>
 
-</p>
+<li>✔ 회원 계정 삭제</li>
 
-<p>
+<li>✔ 보유 쿠폰 삭제</li>
 
-📄 마지막 방문 메뉴
+<li>✔ VIP 등급 삭제</li>
 
-<strong id="menuResult">
+<li>✔ 적립금 소멸</li>
 
--
+<li>✔ 마케팅 수신 종료</li>
 
-</strong>
-
-</p>
+</ul>
 
 </div>
 
-<br><br>
-
 <button
 
-onclick="location.href='survey.html'"
+class="pay-button"
 
-style="width:100%;
-height:60px;
-background:#2563eb;
-color:white;
-font-size:22px;
-border:none;
-border-radius:10px;
-cursor:pointer;">
+onclick="location.href='index.html'">
 
-설문조사 하기
+처음으로
 
 </button>
 
@@ -111,30 +77,23 @@ cursor:pointer;">
 
 </section>
 
-<script>
+<footer>
 
-let sec=parseInt(localStorage.getItem("playTime"))||0;
+<div>
 
-let click=parseInt(localStorage.getItem("clickCount"))||0;
+DarkShop
 
-let menu=localStorage.getItem("lastMenu")||"없음";
+</div>
 
-let m=Math.floor(sec/60);
+<p>
 
-let s=sec%60;
+© 2026 Dark Pattern Shopping Mall
 
-document.getElementById("timeResult").innerHTML=
-String(m).padStart(2,"0")+":"+
-String(s).padStart(2,"0");
+</p>
 
-document.getElementById("clickResult").innerHTML=
-click+"회";
+</footer>
 
-document.getElementById("menuResult").innerHTML=
-menu;
-
-</script>
+<script src="dark.js"></script>
 
 </body>
-
 </html>
