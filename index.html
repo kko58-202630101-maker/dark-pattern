@@ -4,19 +4,40 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <title>Dark Pattern Lab</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;700;800&display=swap"
+rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="background"></div>
+<div class="background">
+
+<div class="circle c1"></div>
+
+<div class="circle c2"></div>
+
+<div class="circle c3"></div>
+
+</div>
 
 <div class="container">
+
+<header>
 
 <h1>
 
@@ -24,59 +45,191 @@
 
 </h1>
 
+<p>
+
+UI/UX 사용성 비교 실험
+
+</p>
+
+</header>
+
+<section class="mission">
+
 <h2>
 
-UI/UX 사용성 체험 프로젝트
+🎯 오늘의 미션
 
 </h2>
 
 <p>
 
-당신은 웹사이트 사용성 평가자입니다.
+쇼핑몰에서 회원 탈퇴를 완료하세요.
 
 </p>
 
-<div class="mission">
+<ul>
+
+<li>✔ 사용 시간 자동 측정</li>
+
+<li>✔ 클릭 횟수 자동 측정</li>
+
+<li>✔ 잘못 클릭한 메뉴 기록</li>
+
+<li>✔ 설문 결과 자동 저장</li>
+
+</ul>
+
+</section>
+
+<section class="cards">
+
+<div class="card dark">
+
+<h2>
+
+🔴 다크패턴
+
+</h2>
+
+<p>
+
+회원 탈퇴가 여러 단계에 숨겨져 있습니다.
+
+</p>
+
+<ul>
+
+<li>• 방해 요소 존재</li>
+
+<li>• 쿠폰 유도</li>
+
+<li>• 반복 확인창</li>
+
+<li>• 찾기 어려운 메뉴</li>
+
+</ul>
+
+<a
+href="dark/home.html"
+class="btn red">
+
+실험 시작
+
+</a>
+
+</div><div class="card good">
+
+<h2>
+
+🟢 좋은 UI
+
+</h2>
+
+<p>
+
+회원 탈퇴를 쉽고 직관적으로 할 수 있습니다.
+
+</p>
+
+<ul>
+
+<li>• 메뉴가 명확함</li>
+
+<li>• 불필요한 팝업 없음</li>
+
+<li>• 최소 클릭</li>
+
+<li>• 쉬운 탐색</li>
+
+</ul>
+
+<a
+href="good/home.html"
+class="btn green">
+
+실험 시작
+
+</a>
+
+</div>
+
+</section>
+
+<section class="info">
+
+<div class="infoBox">
 
 <h3>
 
-🎯 오늘의 미션
+📊 실험에서 측정되는 항목
 
 </h3>
 
-<p>
+<div class="grid">
 
-회원 탈퇴하기
+<div>
 
-</p>
+<span>⏱</span>
 
-<p>
-
-웹사이트를 자유롭게 탐색하여
-
-회원 탈퇴를 완료하세요.
-
-</p>
+<p>총 소요시간</p>
 
 </div>
 
-<div class="buttons">
+<div>
 
-<button
-id="darkBtn">
+<span>🖱</span>
 
-🔴 다크패턴 체험
-
-</button>
-
-<button
-id="goodBtn">
-
-🟢 좋은 설계 체험
-
-</button>
+<p>클릭 횟수</p>
 
 </div>
+
+<div>
+
+<span>📄</span>
+
+<p>페이지 이동</p>
+
+</div>
+
+<div>
+
+<span>❌</span>
+
+<p>잘못 누른 메뉴</p>
+
+</div>
+
+<div>
+
+<span>📝</span>
+
+<p>설문 결과</p>
+
+</div>
+
+<div>
+
+<span>📈</span>
+
+<p>결과 비교</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+2026 UI/UX 사용성 비교 프로젝트
+
+</p>
+
+</footer>
 
 </div>
 
