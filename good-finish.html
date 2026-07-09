@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>탈퇴 완료</title>
+
+<link rel="stylesheet" href="good.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+
+🛒 Good Shopping
+
+</div>
+
+</header>
+
+<section class="recommend">
+
+<div class="card" style="max-width:800px;margin:auto;padding:50px;text-align:center;">
+
+<h1 style="color:#16a34a;">
+
+회원 탈퇴가 완료되었습니다.
+
+</h1>
+
+<br>
+
+<p style="font-size:20px;">
+
+그동안 Good Shopping을 이용해주셔서 감사합니다.
+
+</p>
+
+<br><br>
+
+<div style="background:#eef9f0;padding:30px;border-radius:12px;">
+
+<h2>
+
+실험 결과
+
+</h2>
+
+<br>
+
+<p>
+
+⏱ 소요시간
+
+<strong id="time">
+
+00:00
+
+</strong>
+
+</p>
+
+<br>
+
+<p>
+
+🖱 클릭수
+
+<strong id="click">
+
+0회
+
+</strong>
+
+</p>
+
+<br>
+
+<p>
+
+📄 마지막 방문 메뉴
+
+<strong id="menu">
+
+-
+
+</strong>
+
+</p>
+
+</div>
+
+<br><br>
+
+<button
+
+style="width:100%;
+height:60px;
+background:#16a34a;
+color:white;
+font-size:22px;
+border:none;
+border-radius:10px;
+cursor:pointer;"
+
+onclick="location.href='survey.html'">
+
+설문조사 하기
+
+</button>
+
+</div>
+
+</section>
+
+<script>
+
+let sec=parseInt(localStorage.getItem("goodPlayTime"))||0;
+
+let click=parseInt(localStorage.getItem("goodClickCount"))||0;
+
+let menu=localStorage.getItem("goodLastMenu")||"없음";
+
+let m=Math.floor(sec/60);
+
+let s=sec%60;
+
+document.getElementById("time").innerHTML=
+String(m).padStart(2,"0")+":"+
+String(s).padStart(2,"0");
+
+document.getElementById("click").innerHTML=
+click+"회";
+
+document.getElementById("menu").innerHTML=
+menu;
+
+</script>
+
+</body>
+
+</html>
