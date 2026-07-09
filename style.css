@@ -1,1 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Malgun Gothic",sans-serif;
+}
 
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#222;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.banner{
+    background:#ff4040;
+    color:white;
+    text-align:center;
+    padding:50px;
+}
+
+.banner h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+.container{
+    width:1100px;
+    max-width:95%;
+    margin:40px auto;
+    display:flex;
+    gap:30px;
+}
+
+.left{
+    flex:2;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.right{
+    flex:1;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.right ul{
+    list-style:none;
+}
+
+.right li{
+    padding:12px;
+    border-bottom:1px solid #eee;
+}
+
+label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.check{
+    display:flex;
+    align-items:center;
+    margin-top:15px;
+}
+
+.check label{
+    margin-left:10px;
+    margin-top:0;
+    font-weight:normal;
+}
+
+.coupon{
+    margin-top:25px;
+    background:#ffecec;
+    color:red;
+    border:2px solid red;
+    text-align:center;
+    padding:18px;
+    border-radius:10px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.joinBtn{
+    width:100%;
+    margin-top:30px;
+    padding:18px;
+    background:#ff2d2d;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:24px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.joinBtn:hover{
+    background:#d80000;
+    transform:scale(1.02);
+}
+
+.cancelBtn{
+    margin-top:15px;
+    background:none;
+    border:none;
+    color:#999;
+    font-size:11px;
+    cursor:pointer;
+}
+
+.cancelBtn:hover{
+    color:#555;
+}
+
+#popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+    justify-content:center;
+    align-items:center;
+}
+
+.popupBox{
+    background:white;
+    width:400px;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.popupBox h2{
+    margin-bottom:15px;
+}
+
+.popupBox p{
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+#stay{
+    background:red;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#leave{
+    background:#ddd;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    margin-left:10px;
+    cursor:pointer;
+}
+
+@media(max-width:800px){
+
+.container{
+    flex-direction:column;
+}
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav a{
+    margin:0 10px;
+}
+
+}
