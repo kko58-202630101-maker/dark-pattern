@@ -1,117 +1,19 @@
-// 회원가입 폼
-const form = document.getElementById("signupForm");
+document.getElementById("darkBtn").onclick=function(){
 
-// 팝업
-const popup = document.getElementById("popup");
-const cancelBtn = document.querySelector(".cancelBtn");
-const stayBtn = document.getElementById("stay");
-const leaveBtn = document.getElementById("leave");
+localStorage.setItem("mode","dark");
 
-// 실시간 가입
-const memberList = document.getElementById("memberList");
+localStorage.setItem("startTime",Date.now());
 
-// 쿠폰
-const couponCount = document.getElementById("couponCount");
+window.location.href="dark-home.html";
 
-// ----------------------
-// 실시간 가입자
-// ----------------------
+}
 
-const names = [
-    "김○○",
-    "이○○",
-    "박○○",
-    "최○○",
-    "정○○",
-    "윤○○",
-    "송○○",
-    "임○○",
-    "오○○",
-    "한○○"
-];
+document.getElementById("goodBtn").onclick=function(){
 
-setInterval(function(){
+localStorage.setItem("mode","good");
 
-    const randomName =
-    names[Math.floor(Math.random()*names.length)];
+localStorage.setItem("startTime",Date.now());
 
-    const li = document.createElement("li");
+window.location.href="good-home.html";
 
-    li.textContent = randomName + "님 가입 완료";
-
-    memberList.prepend(li);
-
-    if(memberList.children.length>5){
-
-        memberList.removeChild(memberList.lastChild);
-
-    }
-
-},3000);
-
-
-// ----------------------
-// 남은 쿠폰 감소
-// ----------------------
-
-let coupon = 3;
-
-setInterval(function(){
-
-    if(coupon>1){
-
-        coupon--;
-
-        couponCount.textContent = coupon;
-
-    }
-
-},8000);
-
-
-// ----------------------
-// 나중에 하기
-// ----------------------
-
-cancelBtn.addEventListener("click",function(){
-
-    popup.style.display="flex";
-
-});
-
-
-// ----------------------
-// 계속 가입
-// ----------------------
-
-stayBtn.addEventListener("click",function(){
-
-    popup.style.display="none";
-
-});
-
-
-// ----------------------
-// 나가기
-// ----------------------
-
-leaveBtn.addEventListener("click",function(){
-
-    popup.style.display="none";
-
-    alert("다음에 다시 방문해주세요.");
-
-});
-
-
-// ----------------------
-// 회원가입
-// ----------------------
-
-form.addEventListener("submit",function(e){
-
-    e.preventDefault();
-
-    alert("🎉 회원가입이 완료되었습니다!");
-
-});
+}
