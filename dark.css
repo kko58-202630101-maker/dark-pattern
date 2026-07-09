@@ -1,499 +1,446 @@
+/* ===========================
+   기본 설정
+=========================== */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:"Pretendard","Malgun Gothic",sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-background:#f5f6fa;
-color:#222;
+
+    font-family:"Pretendard",sans-serif;
+    background:#f4f4f4;
+    color:#222;
+
 }
 
-/* HEADER */
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+button{
+
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
 
 .header{
 
-height:80px;
+    width:100%;
+    height:80px;
 
-background:white;
+    background:#181818;
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    justify-content:space-between;
 
-justify-content:space-between;
+    align-items:center;
 
-padding:0 40px;
+    padding:0 50px;
 
-box-shadow:0 2px 12px rgba(0,0,0,.08);
+    position:sticky;
 
-position:sticky;
+    top:0;
 
-top:0;
-
-z-index:999;
+    z-index:999;
 
 }
 
 .logo{
 
-font-size:32px;
+    font-size:30px;
 
-font-weight:bold;
+    font-weight:bold;
 
-color:#2563eb;
-
-}
-
-.searchBox{
-
-display:flex;
-
-width:520px;
+    color:#ff4242;
 
 }
 
-.searchBox input{
+.search-box{
 
-flex:1;
+    width:50%;
 
-height:48px;
-
-padding-left:18px;
-
-border:2px solid #2563eb;
-
-border-radius:10px 0 0 10px;
-
-font-size:16px;
-
-outline:none;
+    display:flex;
 
 }
 
-.searchBox button{
+.search-box input{
 
-width:100px;
+    flex:1;
 
-border:none;
+    padding:15px;
 
-background:#2563eb;
+    border:none;
 
-color:white;
+    border-radius:8px 0 0 8px;
 
-font-size:17px;
+    outline:none;
 
-cursor:pointer;
-
-border-radius:0 10px 10px 0;
+    font-size:16px;
 
 }
 
-.userMenu{
+.search-box button{
 
-display:flex;
+    width:100px;
 
-align-items:center;
+    border:none;
 
-gap:20px;
+    background:#ff3f3f;
 
-font-size:24px;
+    color:white;
 
-}
+    font-size:16px;
 
-.profile{
-
-display:flex;
-
-align-items:center;
-
-gap:12px;
-
-margin-left:15px;
+    border-radius:0 8px 8px 0;
 
 }
 
-.avatar{
+.search-box button:hover{
 
-width:45px;
-
-height:45px;
-
-border-radius:50%;
-
-background:#2563eb;
-
-color:white;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-weight:bold;
-
-font-size:20px;
-
-}
-
-.profile p{
-
-font-size:13px;
-
-color:#777;
-
-}
-
-/* MENU */
-
-nav{
-
-background:white;
-
-display:flex;
-
-justify-content:center;
-
-gap:45px;
-
-padding:18px;
-
-box-shadow:0 2px 8px rgba(0,0,0,.05);
-
-}
-
-nav a{
-
-text-decoration:none;
-
-color:#333;
-
-font-size:17px;
-
-font-weight:600;
-
-transition:.25s;
-
-}
-
-nav a:hover{
-
-color:#2563eb;
-
-}
-
-/* HERO */
-
-.hero{
-
-width:1300px;
-
-margin:35px auto;
-
-height:330px;
-
-background:linear-gradient(135deg,#2563eb,#60a5fa);
-
-border-radius:22px;
-
-display:flex;
-
-align-items:center;
-
-padding-left:70px;
-
-color:white;
-
-}
-
-.hero h1{
-
-font-size:64px;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-font-size:24px;
-
-margin-bottom:25px;
-
-}
-
-.hero button{
-
-padding:15px 35px;
-
-border:none;
-
-background:white;
-
-color:#2563eb;
-
-font-size:18px;
-
-border-radius:10px;
-
-cursor:pointer;
-
-font-weight:bold;
-
-}
-
-/* MISSION */
-
-.mission{
-
-width:1300px;
-
-margin:auto;
-
-margin-bottom:35px;
-
-background:#fff7d6;
-
-border-left:8px solid orange;
-
-padding:25px;
-
-border-radius:12px;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-}
-
-.mission h2{
-
-font-size:28px;
-
-}
-
-#timer{
-
-font-size:30px;
-
-font-weight:bold;
-
-color:red;
-
-}
-
-#clickCount{
-
-font-size:22px;
-
-}
-
-/* PRODUCTS */
-
-.recommend{
-
-width:1300px;
-
-margin:auto;
-
-margin-bottom:60px;
-
-}
-
-.recommend h2{
-
-margin-bottom:25px;
-
-font-size:34px;
-
-}
-
-.products{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:30px;
-
-}
-
-.card{
-
-background:white;
-
-border-radius:18px;
-
-overflow:hidden;
-
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.card img{
-
-width:100%;
-
-height:230px;
-
-object-fit:cover;
-
-}
-
-.card h3{
-
-margin:18px;
-
-font-size:22px;
-
-}
-
-.card p{
-
-margin:0 18px;
-
-color:#777;
-
-}
-
-.card h4{
-
-margin:18px;
-
-font-size:28px;
-
-color:#2563eb;
-
-}
-
-.card button{
-
-width:88%;
-
-margin:18px;
-
-height:48px;
-
-border:none;
-
-background:#2563eb;
-
-color:white;
-
-font-size:18px;
-
-border-radius:10px;
-
-cursor:pointer;
-
-}
-
-/* FOOTER */
-
-footer{
-
-margin-top:60px;
-
-background:#1f2937;
-
-color:white;
-
-padding:45px;
-
-text-align:center;
-
-font-size:18px;
-
-}
-
-@media(max-width:1200px){
-
-.hero,
-.recommend,
-.mission{
-
-width:95%;
-
-}
-
-.products{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-.searchBox{
-
-width:350px;
-
-}
-
-}
-
-@media(max-width:700px){
-
-.header{
-
-flex-direction:column;
-
-height:auto;
-
-padding:20px;
-
-gap:15px;
+    background:#d92f2f;
 
 }
 
 nav{
 
-flex-wrap:wrap;
+    display:flex;
 
-gap:20px;
-
-}
-
-.products{
-
-grid-template-columns:1fr;
+    gap:15px;
 
 }
 
-.searchBox{
+nav button{
 
-width:100%;
+    padding:12px 20px;
 
-}
+    border:none;
 
-.hero{
+    border-radius:8px;
 
-padding:30px;
+    background:#333;
 
-height:auto;
+    color:white;
 
-}
-
-.hero h1{
-
-font-size:42px;
+    font-size:15px;
 
 }
 
-.hero p{
+nav button:hover{
 
-font-size:18px;
+    background:#ff4747;
 
 }
+
+/* ===========================
+   CATEGORY
+=========================== */
+
+.category{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    padding:20px;
+
+    background:white;
+
+}
+
+.category button{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ececec;
+
+    font-weight:bold;
+
+}
+
+.category button:hover{
+
+    background:#ff5555;
+
+    color:white;
+
+}
+
+/* ===========================
+   BANNER
+=========================== */
+
+.banner{
+
+    width:92%;
+
+    height:330px;
+
+    margin:40px auto;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        #ff4a4a,
+        #7a0000
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:70px;
+
+    color:white;
+
+}
+
+.banner-text h1{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.banner-text p{
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+    line-height:1.6;
+
+}
+
+.banner-text button{
+
+    padding:18px 35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    color:#c00000;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.banner-text button:hover{
+
+    transform:scale(1.05);
+
+}
+/* ===========================
+   공통 Section
+=========================== */
+
+section{
+
+    width:92%;
+    margin:50px auto;
+
+}
+
+section h2{
+
+    font-size:32px;
+    margin-bottom:25px;
+    color:#222;
+
+}
+
+/* ===========================
+   추천 문구
+=========================== */
+
+.recommend-message{
+
+    color:#666;
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:1.6;
+
+}
+
+/* ===========================
+   상품 목록
+=========================== */
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================
+   상품 카드
+=========================== */
+
+.product{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.product:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.product img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+}
+
+.product h3{
+
+    padding:18px;
+    font-size:22px;
+
+}
+
+.price{
+
+    padding:0 18px;
+
+    color:#e53935;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+}
+
+.product button{
+
+    width:calc(100% - 36px);
+
+    margin:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    background:#ff4444;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+}
+
+.product button:hover{
+
+    background:#d62828;
+
+}
+
+/* ===========================
+   AI 추천 배지
+=========================== */
+
+.badge{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:#ff2f2f;
+
+    color:white;
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+
+}
+
+/* ===========================
+   인기 상품
+=========================== */
+
+.popular{
+
+    margin-top:80px;
+
+}
+
+.popular h2{
+
+    color:#222;
+
+}
+
+/* ===========================
+   버튼 공통
+=========================== */
+
+.product button,
+.banner button{
+
+    transition:.25s;
+
+}
+
+.product button:active,
+.banner button:active{
+
+    transform:scale(.96);
 
 }
