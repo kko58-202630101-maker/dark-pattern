@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>계정관리</title>
+<title>주문하기</title>
 
 <link rel="stylesheet" href="dark.css">
 
@@ -16,134 +15,265 @@
 
 <header class="header">
 
-<div class="logo">
-🛒 Dark Shopping
-</div>
+    <div class="logo">
+        DarkShop
+    </div>
 
-<div class="searchBox">
+    <div class="search-box">
 
-<input
-type="text"
-placeholder="계정 설정 검색">
+        <input
+        type="text"
+        placeholder="상품 검색">
 
-<button>검색</button>
+        <button>
+            검색
+        </button>
 
-</div>
+    </div>
 
-<div class="userMenu">
+    <nav>
 
-<span>🔔</span>
-<span>❤️</span>
-<span>🛒</span>
+        <button onclick="location.href='dark-home.html'">
+            홈
+        </button>
 
-</div>
+        <button>
+            장바구니
+        </button>
+
+    </nav>
 
 </header>
 
-<nav>
+<section class="order-page">
 
-<a href="dark-home.html">홈</a>
+<h1>
 
-<a href="#">상품</a>
+주문 / 결제
 
-<a href="#">이벤트</a>
+</h1>
 
-<a href="#">고객센터</a>
+<div class="order-container">
 
-<a href="dark-mypage.html">마이페이지</a>
+<!-- 왼쪽 -->
 
-</nav>
+<div class="order-left">
 
-<section class="recommend">
+<div class="cart-item">
+
+<img
+src="https://picsum.photos/220/180?20">
+
+<div class="item-info">
 
 <h2>
 
-계정관리
+무선 이어폰
 
 </h2>
 
-<div class="products">
+<p>
 
-<div class="card">
+AI 추천 상품
 
-<h3>🔑 비밀번호 변경</h3>
+</p>
 
-<p>비밀번호를 변경합니다.</p>
+<p class="price">
 
-<button>변경</button>
+59,900원
 
-</div>
+</p>
 
-<div class="card">
+<div class="quantity">
 
-<h3>📧 이메일 변경</h3>
+<button>-</button>
 
-<p>이메일 주소를 수정합니다.</p>
+<input
+type="number"
+value="1"
+min="1">
 
-<button>변경</button>
-
-</div>
-
-<div class="card">
-
-<h3>📱 휴대폰 번호</h3>
-
-<p>휴대폰 번호를 수정합니다.</p>
-
-<button>변경</button>
+<button>+</button>
 
 </div>
 
-<div class="card">
-
-<h3>🔐 2단계 인증</h3>
-
-<p>계정 보안을 강화합니다.</p>
-
-<button>설정</button>
+</div>
 
 </div>
 
-<div class="card">
+<div class="cart-item">
 
-<h3>💻 로그인 기록</h3>
+<img
+src="https://picsum.photos/220/180?21">
 
-<p>최근 로그인 기록을 확인합니다.</p>
+<div class="item-info">
 
-<button>확인</button>
+<h2>
+
+블루투스 스피커
+
+</h2>
+
+<p>
+
+인기 상품
+
+</p>
+
+<p class="price">
+
+79,000원
+
+</p>
+
+<div class="quantity">
+
+<button>-</button>
+
+<input
+type="number"
+value="1"
+min="1">
+
+<button>+</button>
 
 </div>
 
-<div class="card">
-
-<h3>📲 연결된 기기</h3>
-
-<p>로그인된 기기를 관리합니다.</p>
-
-<button>관리</button>
+</div>
 
 </div>
 
-<div class="card">
+</div>
 
-<h3>📄 서비스 이용내역</h3>
+<!-- 오른쪽 -->
 
-<p>이용내역을 확인합니다.</p>
+<div class="order-right">
 
-<button>보기</button>
+<h2>
+
+주문 요약
+
+</h2>
+
+<hr>
+
+<p>
+
+상품 금액
+
+<span>
+
+138,900원
+
+</span>
+
+</p>
+
+<p>
+
+배송비
+
+<span>
+
+무료
+
+</span>
+
+</p>
+
+<p>
+
+쿠폰 할인
+
+<span style="color:red;">
+
+-15%
+
+</span>
+
+</p>
+
+<hr>
+
+<h2>
+
+최종 결제 금액
+
+</h2>
+
+<h1 class="total-price">
+
+118,065원
+
+</h1>
+<!-- 다크패턴 옵션 -->
+
+<div class="option-box">
+
+    <label>
+
+        <input
+        type="checkbox"
+        checked>
+
+        <strong>프리미엄 배송 (추천)</strong>
+
+        <span class="option-price">
+
+            +4,900원
+
+        </span>
+
+    </label>
+
+    <p class="option-desc">
+
+        가장 많은 고객이 선택한 배송 방법입니다.
+
+    </p>
 
 </div>
 
-<div class="card">
+<div class="option-box">
 
-<h3>▼ 더보기</h3>
+    <label>
 
-<p>숨겨진 메뉴를 확인합니다.</p>
+        <input
+        type="checkbox"
+        checked>
+
+        마케팅 정보 수신에 동의합니다.
+
+    </label>
+
+    <p class="option-desc">
+
+        할인 쿠폰과 이벤트를 가장 먼저 받아볼 수 있습니다.
+
+    </p>
+
+</div>
+
+<div class="warning-box">
+
+    🔥 현재 적용된 15% 할인 쿠폰은
+    <strong>오늘까지만</strong> 사용할 수 있습니다.
+
+</div>
 
 <button
-onclick="location.href='dark-withdraw1.html'">
+class="pay-button"
+onclick="location.href='dark-finish.html'">
 
-더보기
+    지금 결제하기
+
+</button>
+
+<button
+class="cancel-button"
+onclick="location.href='dark-home.html'">
+
+    계속 쇼핑하기
 
 </button>
 
@@ -153,8 +283,23 @@ onclick="location.href='dark-withdraw1.html'">
 
 </section>
 
+<footer>
+
+<div>
+
+DarkShop
+
+</div>
+
+<p>
+
+© 2026 Dark Pattern Shopping Mall
+
+</p>
+
+</footer>
+
 <script src="dark.js"></script>
 
 </body>
-
 </html>
