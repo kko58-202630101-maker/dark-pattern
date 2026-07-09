@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Dark Shopping</title>
-
 <link rel="stylesheet" href="dark.css">
-
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
 <div class="logo">
-
-🛒 DARK SHOP
-
+🛒 Dark Shopping
 </div>
 
-<div class="search">
+<div class="searchBox">
 
 <input
 type="text"
-placeholder="상품을 검색해보세요">
+placeholder="상품을 검색하세요">
 
-<button>검색</button>
+<button>
+검색
+</button>
 
 </div>
 
-<div class="icons">
+<div class="userMenu">
 
 <span>🔔</span>
 
+<span>❤️</span>
+
 <span>🛒</span>
 
-<span>👤</span>
+<div class="profile">
+
+<div class="avatar">
+Y
+</div>
+
+<div>
+
+<b>김예린님</b>
+
+<p>프리미엄 회원</p>
+
+</div>
+
+</div>
 
 </div>
 
@@ -47,60 +58,110 @@ placeholder="상품을 검색해보세요">
 <nav>
 
 <a href="#">홈</a>
+
 <a href="#">베스트</a>
-<a href="#">이벤트</a>
+
 <a href="#">패션</a>
-<a href="#">가전</a>
+
+<a href="#">전자제품</a>
+
 <a href="#">식품</a>
+
 <a href="#">뷰티</a>
 
-<a href="dark-mypage.html">
+<a href="#">고객센터</a>
 
-마이페이지
-
-</a>
+<a href="dark-mypage.html">마이페이지</a>
 
 </nav>
 
-<section class="banner">
+<section class="hero">
+
+<div class="heroText">
 
 <h1>
 
-🎉 오늘만 전상품 최대 90% 할인
+SUMMER SALE
 
 </h1>
 
 <p>
 
-회원 전용 쿠폰 즉시 지급
+오늘 가입하면 최대 90% 할인
 
 </p>
+
+<button>
+
+쿠폰 받기
+
+</button>
+
+</div>
 
 </section>
 
 <section class="mission">
 
-🎯 미션
+<h2>
 
-<strong>
+🎯 MISSION
 
-회원 탈퇴하기
+</h2>
 
-</strong>
+<p>
+
+회원 탈퇴를 완료하세요.
+
+</p>
+
+<div id="timer">
+
+00:00
+
+</div>
+
+<div id="clickCount">
+
+클릭수 : 0
+
+</div>
 
 </section>
 
-<section class="products">
+<section class="recommend">
+
+<h2>
+
+AI 추천 상품
+
+</h2>
+
+<div class="products">
 
 <div class="card">
 
-<img src="https://picsum.photos/300/200?1">
+<img src="https://picsum.photos/300/220?1">
+
+<h3>게이밍 노트북</h3>
+
+<p>★★★★★ (312)</p>
+
+<h4>1,590,000원</h4>
+
+<button>장바구니</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/300/220?2">
 
 <h3>무선 이어폰</h3>
 
-<p>★★★★★ (241)</p>
+<p>★★★★★ (511)</p>
 
-<strong>59,000원</strong>
+<h4>89,000원</h4>
 
 <button>장바구니</button>
 
@@ -108,13 +169,13 @@ placeholder="상품을 검색해보세요">
 
 <div class="card">
 
-<img src="https://picsum.photos/300/200?2">
+<img src="https://picsum.photos/300/220?3">
 
 <h3>기계식 키보드</h3>
 
-<p>★★★★☆ (138)</p>
+<p>★★★★☆ (182)</p>
 
-<strong>89,000원</strong>
+<h4>129,000원</h4>
 
 <button>장바구니</button>
 
@@ -122,13 +183,41 @@ placeholder="상품을 검색해보세요">
 
 <div class="card">
 
-<img src="https://picsum.photos/300/200?3">
+<img src="https://picsum.photos/300/220?4">
 
 <h3>게이밍 마우스</h3>
 
-<p>★★★★★ (402)</p>
+<p>★★★★★ (246)</p>
 
-<strong>39,000원</strong>
+<h4>49,900원</h4>
+
+<button>장바구니</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="recommend">
+
+<h2>
+
+실시간 인기상품
+
+</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://picsum.photos/300/220?5">
+
+<h3>스마트워치</h3>
+
+<p>★★★★☆ (421)</p>
+
+<h4>259,000원</h4>
 
 <button>장바구니</button>
 
@@ -136,15 +225,45 @@ placeholder="상품을 검색해보세요">
 
 <div class="card">
 
-<img src="https://picsum.photos/300/200?4">
+<img src="https://picsum.photos/300/220?6">
 
-<h3>스마트워치</h3>
+<h3>27인치 모니터</h3>
 
-<p>★★★★☆ (189)</p>
+<p>★★★★★ (522)</p>
 
-<strong>159,000원</strong>
+<h4>289,000원</h4>
 
 <button>장바구니</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/300/220?7">
+
+<h3>블루투스 스피커</h3>
+
+<p>★★★★★ (175)</p>
+
+<h4>79,000원</h4>
+
+<button>장바구니</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/300/220?8">
+
+<h3>컴퓨터 의자</h3>
+
+<p>★★★★☆ (296)</p>
+
+<h4>199,000원</h4>
+
+<button>장바구니</button>
+
+</div>
 
 </div>
 
@@ -157,7 +276,7 @@ placeholder="상품을 검색해보세요">
 </footer>
 
 <script src="tracker.js"></script>
+<script src="dark.js"></script>
 
 </body>
-
 </html>
